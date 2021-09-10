@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pin-screen.component.html',
   styleUrls: ['./pin-screen.component.scss'],
 })
-export class PinScreenComponent implements OnInit {
+export class FastFoodOrdersPageComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
