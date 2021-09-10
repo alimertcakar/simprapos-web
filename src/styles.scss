@@ -11,6 +11,12 @@
   font-weight: bold;
   font-style: normal;
 }
+@font-face {
+  font-family: brandon;
+  src: url(assets/fonts/brandontext-medium-webfont.woff);
+  font-weight: 500;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
@@ -21,6 +27,11 @@
 
 :root {
   --bg-primary: #2f3f47;
-  --dark-contrast: #fff;
-  --light-contrast: #000;
+  --dark-contrast-color: #fff;
+  --dark-text-color: #a5b2ba;
+  --light-contrast-color: #000;
+
+  --font-medium: 0.825rem;
+  --font-normal: 1rem;
+  --font-title: 1.2rem;
 }
