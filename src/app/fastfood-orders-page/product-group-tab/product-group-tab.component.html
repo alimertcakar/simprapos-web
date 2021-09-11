@@ -1,1 +1,4 @@
-<p>{{productGroup.name}}</p>
+<div *ngFor="let subgroup of productGroup.subgroup">
+  <div class="product-subgroup" [ngClass]="{'product-subgroup--in-active-tab': index === activeIndex}">{{subgroup.name}}
+  </div>
+</div>

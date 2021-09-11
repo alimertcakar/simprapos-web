@@ -40,7 +40,8 @@
 }
 
 .order-menu {
-  background: #fff;
+  position: relative;
+  background: #f6f6f6;
   border-radius: 10px;
   box-shadow: -2px -2px 20px 5px rgb(0 0 0 / 5%);
   overflow: hidden;
@@ -65,4 +66,9 @@
   to {
     transform: translate(17px, 33px);
   }
+}
+
+.product-group-tab-container {
+  display: flex;
+  margin-top: 0.25rem;
 }

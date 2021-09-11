@@ -24,6 +24,7 @@ interface IProductSubgroup {
 
 export interface IProductGroup {
   name: IProductGroupName;
+  hasIcon: boolean;
   subgroup: IProductSubgroup[];
 }
 
@@ -33,9 +34,15 @@ export interface IProductGroup {
   styleUrls: ['./fastfood-orders.component.scss'],
 })
 export class FastfoodOrdersComponent implements OnInit {
+  activeIndex: number = 0;
+  setActiveIndex(index: number) {
+    this.activeIndex = index;
+  }
+  /* MOCK DATA */
   productGroups: IProductGroup[] = [
     {
       name: 'Etiketler',
+      hasIcon: true,
       subgroup: [
         {
           name: 'Çok Satanlar',
@@ -71,6 +78,7 @@ export class FastfoodOrdersComponent implements OnInit {
     },
     {
       name: 'İçecekler',
+      hasIcon: false,
       subgroup: [
         {
           name: 'Sıcak İçecekler',
@@ -121,6 +129,7 @@ export class FastfoodOrdersComponent implements OnInit {
     },
     {
       name: 'Yiyecekler',
+      hasIcon: false,
       subgroup: [
         {
           name: 'Ana Yemekler',

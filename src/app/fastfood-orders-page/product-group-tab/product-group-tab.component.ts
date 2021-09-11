@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { IProductGroup } from 'src/app/fastfood-orders/fastfood-orders.component';
 
 @Component({
@@ -7,9 +7,16 @@ import { IProductGroup } from 'src/app/fastfood-orders/fastfood-orders.component
   styleUrls: ['./product-group-tab.component.scss'],
 })
 export class ProductGroupTabComponent implements OnInit {
-  @Input() productGroup: IProductGroup;
+  @Input() productGroup!: IProductGroup;
+  @Input() index!: number;
+  @Input() activeIndex!: number;
+  @Output() onActiveIndexChange = new EventEmitter<number>();
 
   constructor() {}
+
+  setActiveIndex(index: number) {
+    this.onActiveIndexChange.emit(index);
+  }
 
   ngOnInit(): void {}
 }

@@ -40,15 +40,14 @@
 
   </div>
   <div class="order-menu">
-    <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32" class="icon"
-      data-v-7567d650="">
-      <path fill="#808080"
-        d="M11.2 32c-0.884 0-1.6-0.716-1.6-1.6v0-8h-8c-0.883-0-1.6-0.716-1.6-1.6 0-0.442 0.179-0.842 0.468-1.131l19.2-19.2c0.289-0.29 0.689-0.469 1.131-0.469s0.842 0.179 1.131 0.469l9.6 9.6c0.29 0.289 0.469 0.689 0.469 1.131s-0.179 0.842-0.469 1.131l-19.2 19.2c-0.289 0.29-0.689 0.469-1.131 0.469h-0zM5.462 19.2h5.738c0.884 0 1.6 0.716 1.6 1.6v0 5.738l15.338-15.338-7.338-7.338-15.338 15.338z">
-      </path>
-    </svg>
-    <div *ngFor="let productGroup of productGroups">
-      <div>
-        <app-product-group-tab [productGroup]={{productGroup}}></app-product-group-tab>
+
+    <div class="product-group-tab-container">
+      <div *ngFor="let productGroup of productGroups; let i = index">
+        <app-product-group-tab [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex"
+          (onActiveIndexChange)="setActiveIndex($event)">
+        </app-product-group-tab>
+        <app-product-group-tab-content [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex">
+        </app-product-group-tab-content>
       </div>
     </div>
 

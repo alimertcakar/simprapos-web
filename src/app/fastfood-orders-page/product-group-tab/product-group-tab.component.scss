@@ -1,0 +1,42 @@
+.product-group {
+  padding-right: 1.5ch;
+  font-size: var(--font-bigger);
+  font-weight: bold;
+  color: var(--light-text-color-darker);
+  &--active {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+}
+
+.product-subgroup {
+  font-size: var(--font-normal);
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  display: none;
+  &:hover {
+    cursor: pointer;
+    border-color: var(--primary-color);
+  }
+
+  &--active {
+    color: var(--dark-contrast-color);
+    background: var(--primary-color);
+  }
+  &--in-active-tab {
+    display: flex !important;
+  }
+}
+
+.product-group-label {
+  margin-bottom: 1rem;
+  &:hover {
+    cursor: pointer;
+  }
+}
