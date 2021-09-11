@@ -5,12 +5,13 @@
       {{subgroup.name}}
     </div>
   </div>
+</div>
 
-  <div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index">
-    <!-- "subgroupActiveIndex" -->
-    <div class="product-subgroup-content"
-      [ngClass]="{'product-subgroup-content--in-active-tab': index === activeIndex}">
-      Content içerik
+<div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index">
+  <!-- "subgroupActiveIndex" -->
+  <div class="product-subgroup-content" [ngClass]="{'product-subgroup-content--in-active-tab': index === activeIndex}">
+    <div *ngFor="let subgroupItem of subgroup?.items">
+      <div class="subgroup-item">{{subgroupItem.name}}</div>
     </div>
   </div>
 </div>

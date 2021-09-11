@@ -27,6 +27,7 @@
 
 .subgroup-container {
   display: flex;
+  width: 100%;
 }
 
 .product-subgroup-content {
@@ -35,4 +36,10 @@
   &--in-active-tab {
     display: flex !important;
   }
+}
+
+.subgroup-item {
+  padding: 15px;
+  border: 1px solid #fff;
+  background: #fff;
 }
