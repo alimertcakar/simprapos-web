@@ -15,6 +15,10 @@ export class AppProductGroupTabContentComponent implements OnInit {
 
   constructor() {}
 
+  formatMoney(money: number | string) {
+    return parseInt(money.toString()).toFixed(2);
+  }
+
   ngOnInit(): void {
     console.log(this.productGroup, 'productGroup');
   }

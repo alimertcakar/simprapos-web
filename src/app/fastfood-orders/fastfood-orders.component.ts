@@ -3,11 +3,10 @@ import { Component, OnInit } from '@angular/core';
 type IProductGroupName = string;
 type IProductSubGroupName = string;
 
-type IProductSubgroupVariantSelectType = 'MULTI' | 'SINGLE';
+type IProductSubgroupVariantSelectType = 'MULTI' | 'SINGLE' | 'REQUIRED';
 
 interface IProductSubgroupVariant {
   name: string;
-  selectType: IProductSubgroupVariantSelectType; // Tekli seçim - çoklu seçim.
 }
 
 interface IProductSubgroupItem {
@@ -15,6 +14,7 @@ interface IProductSubgroupItem {
   price: string | number;
   currency: string;
   variants?: IProductSubgroupVariant[];
+  selectType?: IProductSubgroupVariantSelectType[]; // Tekli seçim - çoklu seçim.
 }
 
 interface IProductSubgroup {
@@ -51,6 +51,21 @@ export class FastfoodOrdersComponent implements OnInit {
               name: '1 Top Dondurma',
               price: 9,
               currency: 'TRY',
+              variants: [
+                {
+                  name: 'Çikolata',
+                },
+                {
+                  name: 'Karamel',
+                },
+                {
+                  name: 'Kaymak',
+                },
+                {
+                  name: 'Limon',
+                },
+              ],
+              selectType: ['MULTI', 'REQUIRED'],
             },
             {
               name: 'Cola',
