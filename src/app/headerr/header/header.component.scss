@@ -38,9 +38,13 @@ header {
 
   .icon-container {
     color: #a5b2ba;
-    margin: 10px;
+    margin: 10px 12px;
     display: flex;
     align-items: center;
+    &--as-text {
+      font-weight: bold;
+      font-size: var(--font-title);
+    }
     &:hover {
       color: #fff;
       cursor: pointer;
