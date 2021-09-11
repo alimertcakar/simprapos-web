@@ -39,6 +39,7 @@ export class FastfoodOrdersComponent implements OnInit {
     this.activeIndex = index;
   }
   /* MOCK DATA */
+  // 1 Adet Özel Maraş Dondurması Spesyal Uzun isim testi...
   productGroups: IProductGroup[] = [
     {
       name: 'Etiketler',
