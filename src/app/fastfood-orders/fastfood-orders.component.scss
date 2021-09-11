@@ -10,7 +10,7 @@
 
   @media all and (max-width: 900px) {
     grid-template-columns: 100vw 100vw;
-    grid-template-rows: 1fr 55px;
+    grid-template-rows: 1fr 155px;
     overflow: auto;
 
     &::-webkit-scrollbar {
