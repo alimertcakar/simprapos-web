@@ -31,6 +31,7 @@
   & p {
     color: var(--dark-text-color);
     margin-top: 1rem;
+    user-select: none;
   }
   & svg {
     position: relative;
