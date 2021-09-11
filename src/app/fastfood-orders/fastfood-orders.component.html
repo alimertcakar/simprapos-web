@@ -1,5 +1,5 @@
 <div class="orders-top-container">
-  <div class="order-summary order-summary--empty">
+  <div class="order-summary order-summary--empty" id="order-summary">
     <div class="order-summary--empty-content">
       <svg data-v-3a6d21d1="" data-v-d8765bb4="" xmlns="http://www.w3.org/2000/svg" width="135" height="142"
         viewBox="0 0 135 143" class="icon">
@@ -38,7 +38,7 @@
     </div>
 
   </div>
-  <div class="order-menu">
+  <div class="order-menu" id="order-menu">
     <div class="product-group-tab-container">
       <div class="tabs">
         <div *ngFor="let productGroup of productGroups; let i = index">
@@ -58,7 +58,8 @@
 
   <div class="mobile-bottom-menu">
     <div class="mobile-bottom-menu-inner">
-      <div class="menu-tab " (click)="setActiveMenuTab(0)" [ngClass]="{'menu-tab--active': 0 === activeMenuTab}">
+      <a href="#order-menu" class="menu-tab " (click)="setActiveMenuTab(0)"
+        [ngClass]="{'menu-tab--active': 0 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 29 31"
             class="icon" color="currentColor" data-v-7567d650="">
@@ -78,8 +79,9 @@
             <div class="active-dot"></div>
           </div>
         </div>
-      </div>
-      <div class="menu-tab" (click)="setActiveMenuTab(1)" [ngClass]="{'menu-tab--active': 1 === activeMenuTab}">
+      </a>
+      <a href="#order-summary" class="menu-tab" (click)="setActiveMenuTab(1)"
+        [ngClass]="{'menu-tab--active': 1 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
             class="icon" color="currentColor" data-v-7567d650="">
@@ -98,7 +100,7 @@
             <div class="active-dot"></div>
           </div>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </div>
