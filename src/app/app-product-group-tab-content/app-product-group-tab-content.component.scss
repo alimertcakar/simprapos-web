@@ -35,6 +35,7 @@
   width: 100%;
   margin-top: 0.75rem;
   gap: 5px;
+  flex-wrap: wrap;
 
   &--in-active-tab {
     display: flex !important;
@@ -46,7 +47,7 @@
   border-radius: 10px;
   background-color: #fff;
   border: 1px solid #f0f0f0;
-  width: min(200px, 25%);
+  width: max(20%, 200px);
 
   &:hover {
     cursor: pointer;
