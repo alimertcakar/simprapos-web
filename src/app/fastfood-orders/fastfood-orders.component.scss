@@ -120,6 +120,8 @@
   position: fixed;
   bottom: 0;
   width: 100vw;
+  background: var(--bg-primary);
+  /* fix */
 
   .menu-tab {
     flex: 1;
