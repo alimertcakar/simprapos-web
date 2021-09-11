@@ -42,3 +42,8 @@
   --font-bigger: 2rem;
   --font-huge: 2.5rem;
 }
+
+html {
+  max-height: 100vh;
+  max-width: 100vw;
+}
