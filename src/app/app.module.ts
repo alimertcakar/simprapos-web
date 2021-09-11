@@ -7,6 +7,7 @@ import { FastFoodOrdersPageComponent } from './fastfood-orders-page/fastfood-ord
 import { HeaderComponent } from './headerr/header/header.component';
 import { IconsComponent } from './icons/icons.component';
 import { FastfoodOrdersComponent } from './fastfood-orders/fastfood-orders.component';
+import { ProductGroupTabComponent } from './fastfood-orders-page/product-group-tab/product-group-tab.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FastfoodOrdersComponent } from './fastfood-orders/fastfood-orders.compo
     HeaderComponent,
     IconsComponent,
     FastfoodOrdersComponent,
+    ProductGroupTabComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

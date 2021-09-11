@@ -22,7 +22,7 @@ interface IProductSubgroup {
   items: IProductSubgroupItem[];
 }
 
-interface IProductGroup {
+export interface IProductGroup {
   name: IProductGroupName;
   subgroup: IProductSubgroup[];
 }
