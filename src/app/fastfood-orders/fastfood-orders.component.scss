@@ -116,6 +116,10 @@
 .mobile-bottom-menu {
   display: flex;
   height: 55px;
+  /* fix */
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 
   .menu-tab {
     flex: 1;
