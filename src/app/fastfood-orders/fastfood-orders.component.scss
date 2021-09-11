@@ -113,6 +113,37 @@
   }
 }
 
+.mobile-bottom-menu-inner {
+  /* Bu class'ı küçük bir tasarım bug'ı düzeltmek için ekledim */
+  padding: 0 !important;
+  display: flex;
+  width: 100%;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    width: 20px;
+    top: -10px;
+  }
+
+  &:after {
+    right: 0px;
+    background: #f5f5f5;
+    border-radius: 15px;
+    height: 15px !important;
+    top: -15px;
+  }
+
+  &:before {
+    left: 10px;
+
+    border-radius: 15px;
+    box-shadow: -10px 0 0 0 #f5f5f5;
+  }
+}
+
 .mobile-bottom-menu {
   display: flex;
   height: 55px;
