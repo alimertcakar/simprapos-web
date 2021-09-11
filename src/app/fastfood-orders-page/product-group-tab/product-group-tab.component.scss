@@ -20,6 +20,7 @@
   align-items: center;
   border: 1px solid #fff;
   display: none;
+
   &:hover {
     cursor: pointer;
     border-color: var(--primary-color);
@@ -27,7 +28,7 @@
 
   &--active {
     color: var(--dark-contrast-color);
-    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
   }
   &--in-active-tab {
     display: flex !important;

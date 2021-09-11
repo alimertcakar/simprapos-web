@@ -1,6 +1,6 @@
 <div class="subgroup-container">
   <div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index">
-    <div class="product-subgroup"
+    <div class="product-subgroup" (click)="setActiveSubgroup(subgroupIndex)"
       [ngClass]="{'product-subgroup--in-active-tab': index === activeIndex , 'product-subgroup--active': subgroupIndex === activeSubgroup}">
       {{subgroup.name}}
     </div>
@@ -9,8 +9,9 @@
 
 <div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index" style="width:100%">
   <!-- "subgroupActiveIndex" -->
-  <div class="product-subgroup-content" [ngClass]="{'product-subgroup-content--in-active-tab': index === activeIndex}">
-    <div *ngFor="let subgroupItem of subgroup?.items" class="subgroup-item">
+  <div class="product-subgroup-content"
+    [ngClass]="{'product-subgroup-content--in-active-tab': index === activeIndex,'subgroup-item--in-active-subgroup': subgroupIndex === activeSubgroup}">
+    <div *ngFor="let subgroupItem of subgroup?.items; " class="subgroup-item" [ngClass]="{}">
       <div class="subgroup-item__name">{{subgroupItem.name}}</div>
       <div class="subgroup-item__price">{{formatMoney(subgroupItem.price)}} TL</div>
       <div class="subgroup-item__actions">

@@ -13,6 +13,10 @@ export class AppProductGroupTabContentComponent implements OnInit {
 
   activeSubgroup: number = 0;
 
+  setActiveSubgroup(index: number) {
+    this.activeSubgroup = index;
+  }
+
   constructor() {}
 
   formatMoney(money: number | string) {

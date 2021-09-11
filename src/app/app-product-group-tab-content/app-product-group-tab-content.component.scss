@@ -19,6 +19,7 @@
   &--active {
     color: var(--dark-contrast-color);
     background: var(--primary-color);
+    border-color: var(--primary-color);
   }
   &--in-active-tab {
     display: flex !important;
@@ -38,10 +39,10 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   gap: 5px;
+}
 
-  &--in-active-tab {
-    display: grid !important;
-  }
+.product-subgroup-content--in-active-tab.subgroup-item--in-active-subgroup {
+  display: grid !important;
 }
 
 .subgroup-item {
