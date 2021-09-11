@@ -10,8 +10,9 @@
 
   @media all and (max-width: 900px) {
     grid-template-columns: 100vw 100vw;
-    grid-template-rows: 1fr 155px;
+    grid-template-rows: 1fr 55px;
     overflow: auto;
+    scroll-snap-type: x mandatory;
 
     &::-webkit-scrollbar {
       display: none;
