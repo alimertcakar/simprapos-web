@@ -1,0 +1,38 @@
+.product-subgroup {
+  font-size: var(--font-normal);
+  background: #fff;
+  border-radius: 10px;
+  font-weight: 400;
+  padding: 0.75rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  display: none;
+  margin-right: 0.75rem;
+
+  &:hover {
+    cursor: pointer;
+    border-color: var(--primary-color);
+  }
+
+  &--active {
+    color: var(--dark-contrast-color);
+    background: var(--primary-color);
+  }
+  &--in-active-tab {
+    display: flex !important;
+  }
+}
+
+.subgroup-container {
+  display: flex;
+}
+
+.product-subgroup-content {
+  display: none;
+
+  &--in-active-tab {
+    display: flex !important;
+  }
+}

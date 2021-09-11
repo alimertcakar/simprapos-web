@@ -42,15 +42,20 @@
   <div class="order-menu">
 
     <div class="product-group-tab-container">
+      <div class="tabs">
+        <div *ngFor="let productGroup of productGroups; let i = index">
+          <app-product-group-tab [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex"
+            (onActiveIndexChange)="setActiveIndex($event)">
+          </app-product-group-tab>
+        </div>
+      </div>
+
+
       <div *ngFor="let productGroup of productGroups; let i = index">
-        <app-product-group-tab [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex"
-          (onActiveIndexChange)="setActiveIndex($event)">
-        </app-product-group-tab>
         <app-product-group-tab-content [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex">
         </app-product-group-tab-content>
       </div>
+
     </div>
-
-
   </div>
 </div>

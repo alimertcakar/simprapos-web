@@ -41,7 +41,7 @@
 
 .order-menu {
   position: relative;
-  background: #f6f6f6;
+  background: #f5f5f5;
   border-radius: 10px;
   box-shadow: -2px -2px 20px 5px rgb(0 0 0 / 5%);
   overflow: hidden;
@@ -70,5 +70,11 @@
 
 .product-group-tab-container {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 0.25rem;
+
+  & .tabs {
+    display: flex;
+    width: 100%;
+  }
 }

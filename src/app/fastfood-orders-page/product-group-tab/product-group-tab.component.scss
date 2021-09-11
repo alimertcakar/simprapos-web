@@ -36,6 +36,8 @@
 
 .product-group-label {
   margin-bottom: 1rem;
+  transition: 0.15s;
+  user-select: none;
   &:hover {
     cursor: pointer;
   }
