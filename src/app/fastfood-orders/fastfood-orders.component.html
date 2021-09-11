@@ -58,7 +58,7 @@
 
   <div class="mobile-bottom-menu">
     <div class="mobile-bottom-menu-inner">
-      <div class="menu-tab menu-tab--active">
+      <div class="menu-tab " (click)="setActiveMenuTab(0)" [ngClass]="{'menu-tab--active': 0 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 29 31"
             class="icon" color="currentColor" data-v-7567d650="">
@@ -79,7 +79,7 @@
           </div>
         </div>
       </div>
-      <div class="menu-tab">
+      <div class="menu-tab" (click)="setActiveMenuTab(1)" [ngClass]="{'menu-tab--active': 1 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
             class="icon" color="currentColor" data-v-7567d650="">

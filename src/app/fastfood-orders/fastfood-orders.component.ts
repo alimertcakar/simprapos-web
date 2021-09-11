@@ -35,15 +35,18 @@ export interface IProductGroup {
 })
 export class FastfoodOrdersComponent implements OnInit {
   activeIndex: number = 0;
-  setActiveIndex(index: number) {
-    this.activeIndex = index;
-  }
-
   /*
    *  Mobile navigation active tab
    */
   activeMenuTab: number = 0;
 
+  setActiveIndex(index: number) {
+    this.activeIndex = index;
+  }
+
+  setActiveMenuTab(index: number) {
+    this.activeMenuTab = index;
+  }
   /* MOCK DATA */
   // 1 Adet Özel Maraş Dondurması Spesyal Uzun isim testi...
   productGroups: IProductGroup[] = [
