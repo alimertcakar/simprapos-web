@@ -1,6 +1,5 @@
 <div class="orders-top-container">
-  <div class="order-summary--empty">
-
+  <div class="order-summary order-summary--empty">
     <div class="order-summary--empty-content">
       <svg data-v-3a6d21d1="" data-v-d8765bb4="" xmlns="http://www.w3.org/2000/svg" width="135" height="142"
         viewBox="0 0 135 143" class="icon">
@@ -40,7 +39,6 @@
 
   </div>
   <div class="order-menu">
-
     <div class="product-group-tab-container">
       <div class="tabs">
         <div *ngFor="let productGroup of productGroups; let i = index">
@@ -55,7 +53,50 @@
         <app-product-group-tab-content [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex">
         </app-product-group-tab-content>
       </div>
+    </div>
+  </div>
 
+  <div class="mobile-bottom-menu">
+    <div class="menu-tab menu-tab--active">
+      <div>
+        <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 29 31"
+          class="icon" color="currentColor" data-v-7567d650="">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M0 1.356h28v28H0z"></path>
+            <g stroke="currentColor" stroke-width="2">
+              <path
+                d="M9.577 7.344l9.9 2.42a1.8 1.8 0 0 1 1.373 1.749v12.794a1.8 1.8 0 0 1-2.227 1.749l-9.9-2.42a1.8 1.8 0 0 1-1.373-1.749V9.093a1.8 1.8 0 0 1 2.227-1.749z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M7.366 21.2a1.506 1.506 0 0 1-.016-.217V7.852c0-.825.668-1.522 1.562-1.631l9.9-1.206c.985-.12 1.89.512 2.022 1.413.01.072.016.144.016.217v.417M6 20.181l2.7.416M6 16.65l2.7.416M6 13.327l2.7.416M6 10.004l2.7.416">
+              </path>
+            </g>
+          </g>
+        </svg>
+        <div class="active-dot-container">
+          <div class="active-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-tab">
+      <div>
+        <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
+          class="icon" color="currentColor" data-v-7567d650="">
+          <g fill="none" fill-rule="evenodd">
+            <path d="M0 0h28v28H0z"></path>
+            <g stroke="currentColor" stroke-width="2">
+              <path
+                d="M7.766 9h12.468a2 2 0 0 1 1.985 1.752l1.5 12A2 2 0 0 1 21.734 25H6.266a2 2 0 0 1-1.985-2.248l1.5-12A2 2 0 0 1 7.766 9z">
+              </path>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M10 12.04V8.02c0-2.199 1.79-3.98 4-3.98s4 1.781 4 3.98v4.02"></path>
+            </g>
+          </g>
+        </svg>
+        <div class="active-dot-container">
+          <div class="active-dot"></div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

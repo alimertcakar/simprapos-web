@@ -38,6 +38,12 @@ export class FastfoodOrdersComponent implements OnInit {
   setActiveIndex(index: number) {
     this.activeIndex = index;
   }
+
+  /*
+   *  Mobile navigation active tab
+   */
+  activeMenuTab: number = 0;
+
   /* MOCK DATA */
   // 1 Adet Özel Maraş Dondurması Spesyal Uzun isim testi...
   productGroups: IProductGroup[] = [

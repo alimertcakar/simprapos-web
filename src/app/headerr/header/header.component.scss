@@ -31,9 +31,17 @@ header {
     &__inner-bottom {
       color: var(--dark-text-color);
     }
+
+    @media all and (max-width: 900px) {
+      display: none;
+    }
   }
   .right-actions {
     justify-content: flex-end;
+    @media all and (max-width: 900px) {
+      flex-basis: 66.6%;
+      max-width: 66.6%;
+    }
   }
 
   .icon-container {

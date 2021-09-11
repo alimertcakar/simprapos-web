@@ -39,6 +39,12 @@
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   gap: 5px;
+  @media all and (max-width: 450px) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  @media all and (max-width: 900px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .product-subgroup-content--in-active-tab.subgroup-item--in-active-subgroup {
