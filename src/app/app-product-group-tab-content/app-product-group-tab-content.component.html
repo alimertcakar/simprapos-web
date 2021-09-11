@@ -7,11 +7,11 @@
   </div>
 </div>
 
-<div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index">
+<div *ngFor="let subgroup of productGroup.subgroup; let subgroupIndex = index" style="width:100%">
   <!-- "subgroupActiveIndex" -->
   <div class="product-subgroup-content" [ngClass]="{'product-subgroup-content--in-active-tab': index === activeIndex}">
-    <div *ngFor="let subgroupItem of subgroup?.items">
-      <div class="subgroup-item">{{subgroupItem.name}}</div>
+    <div *ngFor="let subgroupItem of subgroup?.items" class="subgroup-item">
+      <div>{{subgroupItem.name}}</div>
     </div>
   </div>
 </div>

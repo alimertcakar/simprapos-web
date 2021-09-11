@@ -32,6 +32,9 @@
 
 .product-subgroup-content {
   display: none;
+  width: 100%;
+  margin-top: 0.75rem;
+  gap: 5px;
 
   &--in-active-tab {
     display: flex !important;
@@ -40,6 +43,14 @@
 
 .subgroup-item {
   padding: 15px;
-  border: 1px solid #fff;
-  background: #fff;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+  width: min(200px, 25%);
+
+  &:hover {
+    cursor: pointer;
+    background: #f8f8f8;
+    border-color: var(--primary-color);
+  }
 }

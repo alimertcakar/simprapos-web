@@ -51,7 +51,7 @@
       </div>
 
 
-      <div *ngFor="let productGroup of productGroups; let i = index">
+      <div *ngFor="let productGroup of productGroups; let i = index" style="width:100%">
         <app-product-group-tab-content [productGroup]="productGroup" [index]="i" [activeIndex]="activeIndex">
         </app-product-group-tab-content>
       </div>
