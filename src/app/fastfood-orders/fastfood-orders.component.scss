@@ -13,6 +13,8 @@
     grid-template-rows: 1fr 55px;
     overflow: auto;
     scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: scroll;
 
     &::-webkit-scrollbar {
       display: none;
@@ -32,6 +34,7 @@
 
 .order-summary {
   grid-area: order-grid-left;
+  scroll-snap-align: start;
 
   @media all and (max-width: 900px) {
     grid-area: order-grid-right;
@@ -71,7 +74,7 @@
   box-shadow: -2px -2px 20px 5px rgb(0 0 0 / 5%);
   overflow: hidden;
   grid-area: order-grid-right;
-
+  scroll-snap-align: start;
   @media all and (max-width: 900px) {
     grid-area: order-grid-left;
     order: 1;
