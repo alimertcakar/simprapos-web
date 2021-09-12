@@ -161,6 +161,10 @@
   align-self: flex-end;
   margin-bottom: 10px;
 
+  @media all and (max-width: 900px) {
+    margin-bottom: 55px;
+  }
+
   & .sub-total {
     background: #1f2a30;
     padding: 10px 10px;
