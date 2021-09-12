@@ -40,4 +40,7 @@
 
 <ng-template #hasOrders>
   Sipariş var.
+  <div *ngFor="let order of orders">
+    <div>{{order.name}}</div>
+  </div>
 </ng-template>

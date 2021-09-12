@@ -9,7 +9,7 @@ interface IProductSubgroupVariant {
   name: string;
 }
 
-interface IProductSubgroupItem {
+export interface IProductSubgroupItem {
   name: string;
   price: string | number;
   currency: string;
@@ -39,7 +39,7 @@ export class FastfoodOrdersComponent implements OnInit {
    *  Mobile navigation active tab
    */
   activeMenuTab: number = 0;
-  orders: object[] = [];
+  orders: IProductSubgroupItem[] = [];
 
   setActiveIndex(index: number) {
     this.activeIndex = index;
@@ -212,9 +212,8 @@ export class FastfoodOrdersComponent implements OnInit {
     },
   ];
 
-  addOrder(order: object) {
+  addOrder(order: any) {
     this.orders.push(order);
-    console.log(this.orders, 'this.orders');
   }
 
   constructor() {}

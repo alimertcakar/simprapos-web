@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { IProductGroup } from 'src/app/fastfood-orders/fastfood-orders.component';
+import {
+  IProductGroup,
+  IProductSubgroupItem,
+} from 'src/app/fastfood-orders/fastfood-orders.component';
 
 @Component({
   selector: 'app-product-group-tab-content',
@@ -23,7 +26,7 @@ export class AppProductGroupTabContentComponent implements OnInit {
     return parseInt(money.toString()).toFixed(2);
   }
 
-  addOrder(order: object) {
+  addOrder(order: IProductSubgroupItem) {
     this.onAddOrder.emit(order);
   }
 
