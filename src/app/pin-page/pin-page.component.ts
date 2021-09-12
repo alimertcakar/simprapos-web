@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pin-page',
   templateUrl: './pin-page.component.html',
-  styleUrls: ['./pin-page.component.scss']
+  styleUrls: ['./pin-page.component.scss'],
 })
 export class PinPageComponent implements OnInit {
+  constructor(private router: Router) {}
 
-  constructor() { }
-
-  ngOnInit(): void {
+  goOrders() {
+    this.router.navigate(['/orders']);
   }
 
+  ngOnInit(): void {}
 }

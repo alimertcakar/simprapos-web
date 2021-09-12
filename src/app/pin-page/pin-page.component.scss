@@ -1,0 +1,66 @@
+.pin-page-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: #2f3f47;
+  color: var(--dark-text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .inner-container {
+    max-width: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    padding: 10vh 0;
+
+    & .salutation {
+      margin-bottom: 2rem;
+    }
+
+    & .pin-footer {
+      font-size: 0.825rem;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      & p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.pin-board {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  & button {
+    color: #e3e3e3;
+    font-size: var(--font-big);
+    border: 1px solid #334954;
+    border-radius: 50%;
+    min-width: 72px;
+    min-height: 72px;
+    background: transparent;
+
+    &:hover {
+      cursor: pointer;
+      border-color: var(--primary-color);
+      background: #2b383f;
+    }
+
+    &:nth-last-child(1) {
+      grid-column: 2 / span 1;
+    }
+  }
+}
