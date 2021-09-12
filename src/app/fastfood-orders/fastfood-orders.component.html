@@ -21,8 +21,8 @@
 
   <div class="mobile-bottom-menu">
     <div class="mobile-bottom-menu-inner">
-      <a href="#order-menu" class="menu-tab " (click)="setActiveMenuTab(0)"
-        [ngClass]="{'menu-tab--active': 0 === activeMenuTab}">
+      <!-- href="#order-menu" -->
+      <a class="menu-tab " (click)="setActiveMenuTab(0); " [ngClass]="{'menu-tab--active': 0 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 29 31"
             class="icon" color="currentColor" data-v-7567d650="">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </a>
-      <a href="#order-summary" class="menu-tab" (click)="setActiveMenuTab(1)"
+      <a href="#order-summary" class="menu-tab" (click)="setActiveMenuTab(1); "
         [ngClass]="{'menu-tab--active': 1 === activeMenuTab}">
         <div>
           <svg data-v-1cbd35c4="" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"

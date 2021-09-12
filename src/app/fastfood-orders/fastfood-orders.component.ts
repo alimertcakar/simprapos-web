@@ -45,7 +45,22 @@ export class FastfoodOrdersComponent implements OnInit {
     this.activeIndex = index;
   }
 
+  scrollToTab(tabIndex: number) {
+    switch (tabIndex) {
+      case 0:
+        document.querySelector('.orders-top-container')!.scrollTo(0, 0);
+        break;
+      case 1:
+        document.querySelector('.orders-top-container')!.scrollTo(500, 0);
+        break;
+      default:
+        document.querySelector('.orders-top-container')!.scrollTo(0, 0);
+        break;
+    }
+  }
+
   setActiveMenuTab(index: number) {
+    this.scrollToTab(index);
     this.activeMenuTab = index;
   }
 
