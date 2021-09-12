@@ -3,6 +3,7 @@ import {
   IProductGroup,
   IProductSubgroupItem,
 } from 'src/app/fastfood-orders/fastfood-orders.component';
+import { formatMoney } from 'src/util';
 
 @Component({
   selector: 'app-product-group-tab-content',
@@ -15,15 +16,14 @@ export class AppProductGroupTabContentComponent implements OnInit {
   @Input() activeIndex!: number;
   activeSubgroup: number = 0;
   @Output() onAddOrder = new EventEmitter<object>();
+  formatMoney: (money: string | number) => string;
 
   setActiveSubgroup(index: number) {
     this.activeSubgroup = index;
   }
 
-  constructor() {}
-
-  formatMoney(money: number | string) {
-    return parseInt(money.toString()).toFixed(2);
+  constructor() {
+    this.formatMoney = formatMoney;
   }
 
   addOrder(order: IProductSubgroupItem) {

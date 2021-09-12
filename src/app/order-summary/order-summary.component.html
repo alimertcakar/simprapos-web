@@ -68,10 +68,21 @@
       <div *ngFor="let order of orders" class="order">
         <div class="count">{{1}}</div>
         <div class="label">{{order.name}}</div>
+        <div class="price">{{formatMoney(order.price)}} {{order.currency}}</div>
+        <button class="order-button">
+          <svg data-v-6e124401="" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 21 6"
+            class="icon" color="currentColor" data-v-7567d650="">
+            <g fill="currentColor" fill-rule="evenodd" transform="rotate(90 10.5 11)">
+              <circle cx="2.5" cy="11" r="2.5"></circle>
+              <circle cx="2.5" cy="3" r="2.5"></circle>
+              <circle cx="2.5" cy="19" r="2.5"></circle>
+            </g>
+          </svg>
+        </button>
       </div>
     </div>
     <div class="order-summary-footer">
-      <div class="sub-total">Kalan Tutar <div class="sub-total__price">566.00 TRY</div>
+      <div class="sub-total">Kalan Tutar <div class="sub-total__price">{{formatMoney(566)}} TRY</div>
       </div>
 
       <button class="payment-button">

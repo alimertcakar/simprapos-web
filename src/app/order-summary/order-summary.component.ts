@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { IProductSubgroupItem } from '../fastfood-orders/fastfood-orders.component';
+import { formatMoney } from 'src/util';
 
 @Component({
   selector: 'app-order-summary',
@@ -8,8 +9,11 @@ import { IProductSubgroupItem } from '../fastfood-orders/fastfood-orders.compone
 })
 export class OrderSummaryComponent implements OnInit {
   @Input() orders!: IProductSubgroupItem[];
+  formatMoney: (money: string | number) => string;
 
-  constructor() {}
+  constructor() {
+    this.formatMoney = formatMoney;
+  }
 
   ngOnInit(): void {}
 }

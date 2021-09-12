@@ -14,7 +14,7 @@
     <div *ngFor="let subgroupItem of subgroup?.items; " class="subgroup-item" [ngClass]="{}"
       (click)="addOrder(subgroupItem)">
       <div class="subgroup-item__name">{{subgroupItem.name}}</div>
-      <div class="subgroup-item__price">{{formatMoney(subgroupItem.price)}} TL</div>
+      <div class="subgroup-item__price">{{formatMoney(subgroupItem.price)}} {{subgroupItem.currency}}</div>
       <div class="subgroup-item__actions">
         <div *ngIf="subgroupItem.variants" class="subgroup-item__actions-content">
           <div class="variant-button">
