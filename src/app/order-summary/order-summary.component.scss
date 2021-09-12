@@ -5,7 +5,9 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
   height: 100%;
-  max-height: calc(100vh - 65px);
+  max-height: calc(
+    100vh - 65px - 55px
+  ); /*minus header height minus footer height*/
   overflow: hidden;
 
   @media all and (max-width: 900px) {
