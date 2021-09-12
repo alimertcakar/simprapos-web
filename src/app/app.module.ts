@@ -9,6 +9,7 @@ import { IconsComponent } from './icons/icons.component';
 import { FastfoodOrdersComponent } from './fastfood-orders/fastfood-orders.component';
 import { ProductGroupTabComponent } from './fastfood-orders-page/product-group-tab/product-group-tab.component';
 import { AppProductGroupTabContentComponent } from './app-product-group-tab-content/app-product-group-tab-content.component';
+import { OrderSummaryComponent } from './order-summary/order-summary.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { AppProductGroupTabContentComponent } from './app-product-group-tab-cont
     FastfoodOrdersComponent,
     ProductGroupTabComponent,
     AppProductGroupTabContentComponent,
+    OrderSummaryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
