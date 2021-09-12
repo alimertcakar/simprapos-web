@@ -1,4 +1,4 @@
-<div class="order-summary order-summary--empty" id="order-summary">
+<div *ngIf="!(orders?.length! > 0); else hasOrders" class="order-summary order-summary--empty" id="order-summary">
   <div class="order-summary--empty-content">
     <svg data-v-3a6d21d1="" data-v-d8765bb4="" xmlns="http://www.w3.org/2000/svg" width="135" height="142"
       viewBox="0 0 135 143" class="icon">
@@ -35,5 +35,9 @@
     </svg>
     <p>Şu an yeni bir sipariş bulunmamakta.</p>
   </div>
-
 </div>
+
+
+<ng-template #hasOrders>
+  Sipariş var.
+</ng-template>
