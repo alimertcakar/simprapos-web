@@ -39,8 +39,14 @@
 
 
 <ng-template #hasOrders>
-  Sipariş var.
-  <div *ngFor="let order of orders">
-    <div>{{order.name}}</div>
+  <div class="order-summary order-summary--has-orders">
+    <div class="order-summary-nav">
+      <div class="order-summary-nav__tab">Yeni</div>
+      <div class="order-summary-nav__tab">Geçmiş</div>
+    </div>
+
+    <div *ngFor="let order of orders">
+      <div>{{order.name}}</div>
+    </div>
   </div>
 </ng-template>
