@@ -39,6 +39,7 @@ export class FastfoodOrdersComponent implements OnInit {
    *  Mobile navigation active tab
    */
   activeMenuTab: number = 0;
+  orders: object[] = [];
 
   setActiveIndex(index: number) {
     this.activeIndex = index;
@@ -47,6 +48,7 @@ export class FastfoodOrdersComponent implements OnInit {
   setActiveMenuTab(index: number) {
     this.activeMenuTab = index;
   }
+
   /* MOCK DATA */
   // 1 Adet Özel Maraş Dondurması Spesyal Uzun isim testi...
   productGroups: IProductGroup[] = [
@@ -209,6 +211,11 @@ export class FastfoodOrdersComponent implements OnInit {
       ],
     },
   ];
+
+  addOrder(order: object) {
+    this.orders.push(order);
+    console.log(this.orders, 'this.orders');
+  }
 
   constructor() {}
 

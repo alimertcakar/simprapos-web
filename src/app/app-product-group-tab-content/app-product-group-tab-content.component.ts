@@ -10,8 +10,8 @@ export class AppProductGroupTabContentComponent implements OnInit {
   @Input() productGroup!: IProductGroup;
   @Input() index!: number;
   @Input() activeIndex!: number;
-
   activeSubgroup: number = 0;
+  @Output() onAddOrder = new EventEmitter<object>();
 
   setActiveSubgroup(index: number) {
     this.activeSubgroup = index;
@@ -21,6 +21,10 @@ export class AppProductGroupTabContentComponent implements OnInit {
 
   formatMoney(money: number | string) {
     return parseInt(money.toString()).toFixed(2);
+  }
+
+  addOrder(order: object) {
+    this.onAddOrder.emit(order);
   }
 
   ngOnInit(): void {
