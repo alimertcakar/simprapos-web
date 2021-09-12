@@ -41,4 +41,23 @@
 
 .order-summary-nav {
   background: var(--bg-darker);
+  display: flex;
+  border-radius: 10px;
+  font-size: var(--font-caption);
+  margin-bottom: 10px;
+
+  &__tab {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    color: var(--dark-contrast-color);
+
+    &--active {
+      background: var(--dark-contrast-color);
+      color: var(--light-contrast-color);
+      border-radius: 10px;
+    }
+  }
 }
