@@ -60,6 +60,9 @@
     justify-content: center;
     color: var(--dark-contrast-color);
     position: relative;
+    &:hover {
+      cursor: pointer;
+    }
 
     & .icon-button {
       width: 26px;
@@ -71,8 +74,18 @@
       background: var(--bg-primary);
       position: absolute;
       right: 10px;
+      border: 1px solid var(--bg-primary);
       &--active {
         background: #ebebeb;
+        border: 1px solid #ebebeb;
+        &:hover {
+          border: 1px solid #243138 !important;
+        }
+      }
+      &:hover {
+        transition: 0.15s;
+        transform: scale(1.05);
+        border: 1px solid #e6e6e6;
       }
     }
 
