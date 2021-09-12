@@ -35,6 +35,7 @@ export interface IProductGroup {
 })
 export class FastfoodOrdersComponent implements OnInit {
   activeIndex: number = 0;
+  editMode: boolean = false;
   /*
    *  Mobile navigation active tab
    */
@@ -43,6 +44,10 @@ export class FastfoodOrdersComponent implements OnInit {
 
   setActiveIndex(index: number) {
     this.activeIndex = index;
+  }
+
+  toggleEditMode() {
+    this.editMode = !this.editMode;
   }
 
   scrollToTab(tabIndex: number) {

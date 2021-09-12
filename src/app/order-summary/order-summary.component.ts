@@ -9,6 +9,8 @@ import { formatMoney } from 'src/util';
 })
 export class OrderSummaryComponent implements OnInit {
   @Input() orders!: IProductSubgroupItem[];
+  @Input() editMode!: boolean;
+  @Input() toggleEditMode!: () => void;
   formatMoney: (money: string | number) => string;
 
   constructor() {

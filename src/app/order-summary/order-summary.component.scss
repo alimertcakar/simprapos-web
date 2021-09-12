@@ -82,6 +82,7 @@
         border: 1px solid #ebebeb;
         &:hover {
           border: 1px solid #243138 !important;
+          cursor: pointer;
         }
       }
       &:hover {
@@ -105,6 +106,18 @@
   border-radius: 10px;
 }
 
+.count-button {
+  border: 1px solid #465a64;
+  padding: 5px;
+  place-items: center;
+  border-radius: 50%;
+  min-width: 28px;
+  background: transparent;
+  color: #fff;
+  min-height: 28px;
+  display: none;
+}
+
 .order {
   color: var(--dark-contrast-color);
   font-weight: 500;
@@ -112,6 +125,26 @@
   background: #27353d;
   display: flex;
   align-items: center;
+
+  & .count-increase-button {
+    @extend .count-button;
+    margin-right: 10px;
+  }
+  & .count-minus-button {
+    @extend .count-button;
+  }
+  &.edit-mode {
+    & .count-increase-button {
+      display: grid !important;
+    }
+    & .count-minus-button {
+      display: grid !important;
+    }
+
+    & .count {
+      margin: 0 0.5ch !important;
+    }
+  }
 
   & .order-button {
     background: none;

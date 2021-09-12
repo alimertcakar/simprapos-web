@@ -43,13 +43,14 @@
     <nav class="order-summary-nav">
       <div class="order-summary-nav__tab order-summary-nav__tab--active">
         <p>Yeni</p>
-        <div class="icon-button icon-button--active"><svg data-v-d8765bb4="" xmlns="http://www.w3.org/2000/svg"
-            width="14" height="14" viewBox="0 0 33 32" class="icon" color="currentColor" data-v-7567d650="">
+        <button (click)="toggleEditMode()" class="icon-button icon-button--active"><svg data-v-d8765bb4=""
+            xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 33 32" class="icon"
+            color="currentColor" data-v-7567d650="">
             <path fill="currentColor" d="M3.103 22.666l7.321 7.318-9.151 1.83z"></path>
             <path fill="currentColor"
               d="M30.56 9.85c2.022-2.022 2.022-5.299 0-7.321s-5.299-2.022-7.321 0l-16.475 16.475 7.324 7.324 16.472-16.477z">
             </path>
-          </svg></div>
+          </svg></button>
       </div>
       <div class="order-summary-nav__tab">
         <p>Geçmiş</p>
@@ -65,8 +66,10 @@
     </nav>
 
     <div class="order-container">
-      <div *ngFor="let order of orders" class="order">
+      <div *ngFor="let order of orders" class="order" [ngClass]="{'edit-mode': editMode === true}">
+        <button class="count-minus-button">-</button>
         <div class="count">{{1}}</div>
+        <button class="count-increase-button">+</button>
         <div class="label">{{order.name}}</div>
         <div class="price">{{formatMoney(order.price)}} {{order.currency}}</div>
         <button class="order-button">
