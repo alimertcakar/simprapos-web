@@ -49,6 +49,7 @@ header {
     margin: 10px 12px;
     display: flex;
     align-items: center;
+
     &--as-text {
       font-weight: bold;
       font-size: var(--font-title);
@@ -56,6 +57,27 @@ header {
     &:hover {
       color: #fff;
       cursor: pointer;
+    }
+    &.mobile {
+      justify-content: center;
+      @media all and (max-width: 900px) {
+        display: block;
+        display: flex;
+      }
+    }
+    &.mobile-only {
+      justify-content: center;
+      @media all and (max-width: 900px) {
+        display: block;
+        display: flex;
+      }
+      @media all and (min-width: 900px) {
+        display: none !important;
+      }
+    }
+
+    @media all and (max-width: 900px) {
+      display: none;
     }
   }
 }
