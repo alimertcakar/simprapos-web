@@ -1,6 +1,12 @@
 .order-summary {
   grid-area: order-grid-left;
   scroll-snap-align: start;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  max-height: calc(100vh - 65px);
+  overflow: hidden;
 
   @media all and (max-width: 900px) {
     grid-area: order-grid-right;
@@ -53,11 +59,95 @@
     display: flex;
     justify-content: center;
     color: var(--dark-contrast-color);
+    position: relative;
+
+    & .icon-button {
+      width: 26px;
+      height: 26px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background: var(--bg-primary);
+      position: absolute;
+      right: 10px;
+      &--active {
+        background: #ebebeb;
+      }
+    }
 
     &--active {
       background: var(--dark-contrast-color);
       color: var(--light-contrast-color);
       border-radius: 10px;
     }
+  }
+}
+
+.order-container {
+  overflow: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.order {
+  color: var(--dark-contrast-color);
+  font-weight: 500;
+  padding: 20px 10px;
+  background: #27353d;
+  display: flex;
+  align-items: center;
+
+  & .count {
+    padding: 3px;
+    border: 1px solid #465a64;
+    min-width: 28px;
+    min-height: 28px;
+    display: grid;
+    place-items: center;
+    margin-right: 0.5ch;
+    border-radius: 10px;
+  }
+
+  &:nth-child(2n + 1) {
+    background: #243138;
+  }
+  &:first-of-type {
+    border-radius: 10px 10px 0px 0px;
+  }
+  &:last-of-type {
+    border-radius: 0px 0px 10px 10px;
+  }
+}
+
+.order-summary-footer {
+  background: #27353d;
+  border-radius: 10px;
+  padding: 10px;
+  align-self: flex-end;
+  margin-bottom: 10px;
+
+  & .sub-total {
+    background: #1f2a30;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    &__price {
+      color: var(--primary-color);
+    }
+  }
+
+  & .payment-button {
+    width: 100%;
+    background-color: #bcd6fa;
+    border-radius: 10px;
+    font-size: var(--font-normal);
+    padding: 15px 0;
+    font-weight: 500;
+    color: #2f3f47;
+    margin-top: 10px;
   }
 }
