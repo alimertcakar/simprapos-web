@@ -10,6 +10,7 @@ import { FastfoodOrdersComponent } from './fastfood-orders/fastfood-orders.compo
 import { ProductGroupTabComponent } from './fastfood-orders-page/product-group-tab/product-group-tab.component';
 import { AppProductGroupTabContentComponent } from './app-product-group-tab-content/app-product-group-tab-content.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
+import { PinPageComponent } from './pin-page/pin-page.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { OrderSummaryComponent } from './order-summary/order-summary.component';
     ProductGroupTabComponent,
     AppProductGroupTabContentComponent,
     OrderSummaryComponent,
+    PinPageComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
