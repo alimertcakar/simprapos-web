@@ -90,3 +90,19 @@ header {
     }
   }
 }
+
+.kuver-popover-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  & .popover-container {
+    padding: 5px;
+  }
+
+  & > div {
+    flex: 1;
+  }
+  & button {
+    margin-top: 10px;
+  }
+}

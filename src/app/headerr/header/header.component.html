@@ -1,6 +1,24 @@
 <header>
   <div class="left-actions">
-    <div class="icon-container mobile">
+    <mde-popover #kuverPopover="mdePopover" mdePopoverPositionY="above">
+      <div class="popover-container">
+        <div class="popover-container__header--with-padding">
+          <div class="popover-container__title">Kuver işlemleri</div>
+          <div class="popover-container__close">X</div>
+        </div>
+        <div class="popover-container__content--with-padding">
+          <div class="kuver-popover-content">
+            <div>ikon kadın - sayı +</div>
+            <div>ikon erkek - sayı +</div>
+            <div>ikon çocuk - sayı +</div>
+            <button mat-stroked-button class="button-standard--mat big primary">Kuver Güncelle</button>
+            <button mat-stroked-button class="button-standard--mat big">Müşteri Ekle</button>
+          </div>
+        </div>
+      </div>
+    </mde-popover>
+
+    <div class="icon-container mobile" md-button [mdePopoverTriggerFor]="kuverPopover" mdePopoverTriggerOn="click">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 34 34" class="icon">
         <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linejoin="round" stroke-width="2">
           <path stroke-linecap="round"

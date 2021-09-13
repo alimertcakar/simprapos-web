@@ -11,6 +11,9 @@ import { ProductGroupTabComponent } from './fastfood-orders-page/product-group-t
 import { AppProductGroupTabContentComponent } from './app-product-group-tab-content/app-product-group-tab-content.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { PinPageComponent } from './pin-page/pin-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdePopoverModule } from '@material-extended/mde';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,13 @@ import { PinPageComponent } from './pin-page/pin-page.component';
     OrderSummaryComponent,
     PinPageComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MdePopoverModule,
+    MatButtonModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

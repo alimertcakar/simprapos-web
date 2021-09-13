@@ -5,7 +5,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: #2f3f47;
+  background: #292b2f;
   color: var(--dark-text-color);
   display: flex;
   justify-content: center;
@@ -55,7 +55,8 @@
 
     &:hover {
       cursor: pointer;
-      border-color: var(--primary-color);
+      // border-color: var(--primary-color);
+      border-color: #fff;
       background: #2b383f;
     }
 

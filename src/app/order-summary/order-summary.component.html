@@ -88,7 +88,12 @@
       <div class="sub-total">Kalan Tutar <div class="sub-total__price">{{formatMoney(566)}} TRY</div>
       </div>
 
-      <button class="payment-button">
+      <mde-popover #appPopover="mdePopover">
+        <button md-button> Settings </button>
+        <button md-button> Help </button>
+      </mde-popover>
+
+      <button class="payment-button" md-button [mdePopoverTriggerFor]="appPopover">
         <img data-v-e9ae2b0c="" data-v-7567d650="" height="16"
           style="margin-right:5px;     filter: invert(1) opacity(0.86);"
           src="https://button-icons.s3.eu-central-1.amazonaws.com/production/icon_payment.png"
