@@ -48,9 +48,16 @@ header {
 
   .icon-container {
     color: #a5b2ba;
-    margin: 10px 12px;
+    margin: 10px 6px;
     display: flex;
     align-items: center;
+    border-radius: 15px;
+    min-width: 32px;
+    padding: 0 6px;
+    transition: 0.1s;
+    &:hover {
+      background: #35383e;
+    }
 
     &--as-text {
       font-weight: bold;

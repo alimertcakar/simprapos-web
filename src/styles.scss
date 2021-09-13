@@ -27,13 +27,13 @@
 }
 
 :root {
-  --bg-primary: #2f3f47;
-  --bg-darker: #243138;
+  --bg-primary: #292B2F;
+  --bg-darker: #121212;
   --dark-contrast-color: #fff;
   --dark-text-color: #a5b2ba;
   --light-contrast-color: #000;
   --light-text-color-darker: #808080;
-  --primary-color: #ec9c3b;
+  --primary-color: #ff6000;
   --font-medium: 0.825rem;
   --font-normal: 1rem;
   --font-caption: 1.125rem;
@@ -59,7 +59,7 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background: #1f2a30;
+    background: #424242;
     border: 1px solid #f1f1f1;
     border-radius: 10px;
   }
