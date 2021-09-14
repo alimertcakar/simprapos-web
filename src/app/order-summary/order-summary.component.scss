@@ -123,6 +123,10 @@
   color: #fff;
   min-height: 28px;
   display: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .order {
