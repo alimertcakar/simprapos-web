@@ -187,6 +187,9 @@
     place-items: center;
     margin-right: 0.5ch;
     border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   & .price {
