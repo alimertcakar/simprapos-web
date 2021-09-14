@@ -5,14 +5,42 @@
 .login-grid {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: ". login-form .";
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    ". login-form ."
+    ". uye-degil .";
 
-  @media all and (max-width: 450px) {
+  .uye-degil-container {
+    grid-area: uye-degil;
+  }
+  .login-form {
+  }
+
+  @media all and (min-width: 800px) {
+    grid-template-columns: 1fr 2.5fr 1fr;
+
+    @media all and(min-width:1000px) {
+      grid-template-columns: 1fr 1.5fr 1fr;
+    }
+    @media all and(min-width:1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media all and (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-areas: "login-form";
+    .uye-degil-container {
+      grid-area: unset;
+    }
+
     & .login-form {
       margin: 0 15px;
+    }
+    @media all and(min-width:550px) {
+      & .login-form {
+        margin: 0 55px;
+      }
     }
   }
 
