@@ -114,3 +114,16 @@
     color: #666;
   }
 }
+
+.accept-agreements-container {
+  margin-bottom: 1.34rem;
+  padding-left: 10px;
+  & .mat-checkbox-inner-container {
+    width: 22px !important;
+    height: 22px !important;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 24px;
+    width: 24px;
+  }
+}
