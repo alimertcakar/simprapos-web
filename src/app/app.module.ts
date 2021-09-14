@@ -14,6 +14,9 @@ import { PinPageComponent } from './pin-page/pin-page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdePopoverModule } from '@material-extended/mde';
 import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { RegisterPageComponent } from './register-page/register-page.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { MatButtonModule } from '@angular/material/button';
     AppProductGroupTabContentComponent,
     OrderSummaryComponent,
     PinPageComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,6 +38,7 @@ import { MatButtonModule } from '@angular/material/button';
     BrowserAnimationsModule,
     MdePopoverModule,
     MatButtonModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

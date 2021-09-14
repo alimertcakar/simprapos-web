@@ -1,0 +1,15 @@
+.header {
+  display: none;
+}
+
+.login-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: ". login-form .";
+  & .login-form {
+    grid-area: login-form;
+    display: flex;
+    justify-content: center;
+  }
+}
