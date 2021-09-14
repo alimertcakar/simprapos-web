@@ -139,8 +139,11 @@
     .login-grid {
       grid-template-rows: 1fr !important;
     }
-    .login-form: {
-      margin-top: 1rem;
+
+    @media all and (max-width: 1400px) {
+      .login-form {
+        margin-top: 1rem;
+      }
     }
   }
 }
