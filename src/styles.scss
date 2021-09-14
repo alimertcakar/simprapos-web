@@ -183,6 +183,9 @@ body {
     color: #fff;
     background: var(--primary-color);
   }
+  &.text-button {
+    border: none !important;
+  }
 }
 
 .main-container {
