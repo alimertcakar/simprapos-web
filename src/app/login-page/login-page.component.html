@@ -22,7 +22,7 @@
 
   <div class="login-grid">
     <form class="login-form">
-      <h1>Kullanıcı girişi</h1>
+      <h1>Kullanıcı Girişi</h1>
 
       <mat-form-field class="input-standard-light" appearance="fill">
         <mat-label>E Posta</mat-label>
@@ -31,6 +31,7 @@
           Bu alan zorunludur.
         </mat-error>
       </mat-form-field>
+
       <mat-form-field class="input-standard-light" appearance="fill">
         <mat-label>Şifre</mat-label>
         <input type="password" matInput placeholder="******">
@@ -38,6 +39,7 @@
           Bu alan zorunludur.
         </mat-error>
       </mat-form-field>
+
       <button mat-stroked-button class="button-standard--mat big primary">Giriş Yap</button>
       <button mat-stroked-button class="button-standard--mat text-button sifremi-unuttum-button">Şifremi
         unuttum</button>
@@ -49,7 +51,8 @@
     <div class="uye-degil-container">
       <p class="title">Henüz üye değil misiniz?</p>
       <div class="desc">1 dakika içerisinde ücretsiz üyelik oluşturabilirsiniz.</div>
-      <button mat-stroked-button class="button-standard--mat uyelik-olustur-button">Üyelik Oluştur</button>
+      <button mat-stroked-button class="button-standard--mat uyelik-olustur-button" (click)="goRegister()">Üyelik
+        Oluştur</button>
 
     </div>
 
