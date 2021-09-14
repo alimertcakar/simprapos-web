@@ -14,6 +14,7 @@
     grid-area: uye-degil;
   }
   .login-form {
+    align-self: center;
   }
 
   @media all and (min-width: 800px) {
@@ -129,12 +130,19 @@
 }
 
 .register-container {
+  height: 100vh;
   @media all and (min-width: 1000px) {
     display: flex;
 
     .logo-container {
       align-items: center;
       max-height: 100vh;
+      display: flex;
+      flex-direction: column;
+
+      .logo-container-inner svg {
+        margin-left: 20px;
+      }
     }
     .login-grid {
       grid-template-rows: 1fr !important;
@@ -145,5 +153,23 @@
         margin-top: 1rem;
       }
     }
+  }
+}
+
+.logo-info {
+  padding: 15px;
+  margin-top: 15px;
+  @media all and (max-width: 999px) {
+    display: none;
+  }
+
+  & .title {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+    margin-top: 1rem;
+  }
+  & .desc {
+    line-height: 1.5;
+    color: var(--text-color);
   }
 }
