@@ -23,6 +23,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatRippleModule } from '@angular/material/core';
 import { PaymentSummaryComponent } from './payment-summary/payment-summary.component';
 import { PaymentReceiveComponent } from './payment-receive/payment-receive.component';
+import { PaymentReceiveKeyboardComponent } from './payment-receive-keyboard/payment-receive-keyboard.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { PaymentReceiveComponent } from './payment-receive/payment-receive.compo
     PaymentPageComponent,
     PaymentSummaryComponent,
     PaymentReceiveComponent,
+    PaymentReceiveKeyboardComponent,
   ],
   imports: [
     BrowserModule,

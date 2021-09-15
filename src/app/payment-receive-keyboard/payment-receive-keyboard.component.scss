@@ -1,0 +1,27 @@
+.pin-board {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  & button {
+    color: #e3e3e3;
+    font-size: var(--font-big);
+    border: 1px solid #334954;
+    border-radius: 50%;
+    min-width: 72px;
+    min-height: 72px;
+    background: transparent;
+
+    &:hover {
+      cursor: pointer;
+      // border-color: var(--primary-color);
+      border-color: #fff;
+      background: #2b383f;
+    }
+
+    &:nth-last-child(1) {
+      grid-column: 2 / span 1;
+    }
+  }
+}
