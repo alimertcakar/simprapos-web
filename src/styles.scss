@@ -224,6 +224,10 @@ body {
     color: #fff;
     background: var(--primary-color);
   }
+  &.primary-dark {
+    color: #fff;
+    background: var(--primary-color-dark);
+  }
   &.text-button {
     border: none !important;
   }

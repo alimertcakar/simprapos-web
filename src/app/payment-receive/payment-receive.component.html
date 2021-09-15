@@ -17,8 +17,28 @@
   </div>
 
   <ng-template #hasOrders>
-    <div>
-      Ürünleri ödeme al
+    <div class="payment-receiver__container">
+      <div class="payment-receive-left">
+        <div class="payment-receiver__title">Ödenecekler</div>
+        <div class="payment-items-container">
+          <div class="payment-item">dsadsa</div>
+          <div class="payment-item">sadsad</div>
+          <div class="payment-item">asdsada</div>
+        </div>
+
+        <div class="payment-items-total">
+          <div>3 ürün ödenecek</div>
+          <div>Toplam: x tl</div>
+          <div>
+            <button class="button-standard--mat big primary-dark" mat-button>
+              Ödeme Al
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="payment-receive-right">
+        <div class="payment-receiver__title--small">Ödenecekler</div>
+      </div>
     </div>
   </ng-template>
 </div>

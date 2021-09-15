@@ -40,3 +40,45 @@
     border-radius: 0;
   }
 }
+
+.payment-receiver {
+  &__container {
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.86);
+    background: #303236;
+    margin: 0 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+  }
+  &__title {
+    font-weight: 500;
+    font-size: var(--font-title);
+    margin-bottom: 1rem;
+    &--small {
+      @extend .payment-receiver__title;
+      font-size: var(--font-caption);
+      font-weight: 400;
+    }
+  }
+}
+
+.payment-items-container {
+  background: #35373b;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 1.5rem;
+}
+
+.payment-receive-left {
+}
+
+.payment-receive-right {
+}
+
+.payment-items-total {
+  & button {
+    min-width: 235px;
+  }
+}

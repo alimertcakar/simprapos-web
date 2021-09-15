@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-payment-summary',
@@ -6,7 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./payment-summary.component.scss'],
 })
 export class PaymentSummaryComponent implements OnInit {
-  @Input() addOrder!: any;
+  @Output() onAddOrder = new EventEmitter<object>();
+
+  addOrder(order: any) {
+    this.onAddOrder.emit(order);
+  }
 
   constructor() {}
 

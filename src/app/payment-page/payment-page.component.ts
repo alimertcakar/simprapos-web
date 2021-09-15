@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./payment-page.component.scss'],
 })
 export class PaymentPageComponent implements OnInit {
-  orders: any[] = [];
+  orders: any[] = ['x'];
   addOrder(order: any) {
-    console.log(this.orders);
     this.orders.push(order);
   }
   constructor() {}
