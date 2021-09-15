@@ -18,6 +18,10 @@ import { MatInputModule } from '@angular/material/input';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { PaymentPageComponent } from './payment-page/payment-page.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatRippleModule } from '@angular/material/core';
+import { PaymentReceiveComponent } from './payment-receive/payment-receive.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     PinPageComponent,
     LoginPageComponent,
     RegisterPageComponent,
+    PaymentPageComponent,
+    PaymentReceiveComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +47,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatButtonModule,
     MatInputModule,
     MatCheckboxModule,
+    MatDialogModule,
+    MatRippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -50,7 +50,8 @@
 
 .order-summary-nav {
   background: var(--bg-darker);
-  background: #292b2f;
+  background: var(--bg-primary);
+
   border: 1px solid #3d3d3d;
   display: flex;
   border-radius: 10px;
@@ -70,6 +71,10 @@
       cursor: pointer;
     }
 
+    & p {
+      color: rgba(255, 255, 255, 0.5);
+    }
+
     & .icon-button {
       width: 26px;
       height: 26px;
@@ -81,9 +86,11 @@
       position: absolute;
       right: 10px;
       border: 1px solid var(--bg-primary);
+
       &--active {
         background: #ebebeb;
         border: 1px solid #ebebeb;
+
         &:hover {
           border: 1px solid #36393f !important;
           cursor: pointer;
@@ -99,10 +106,15 @@
     &--active {
       // background: var(--dark-contrast-color);
       // color: var(--light-contrast-color);
-      background: #383c42;
+      background: #3f444a;
       color: #fff;
       opacity: 0.86;
       border-radius: 10px;
+
+      & p {
+        color: rgba(255, 255, 255, 1);
+        font-weight: 500;
+      }
     }
   }
 }

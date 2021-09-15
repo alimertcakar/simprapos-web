@@ -69,6 +69,13 @@ $simpra-theme: mat.define-light-theme(
 
 @font-face {
   font-family: brandon;
+  src: url(assets/fonts/brandontext-thin-webfont.woff);
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: brandon;
   src: url(assets/fonts/brandontext-regular-webfont.woff);
   font-weight: normal;
   font-style: normal;
@@ -104,7 +111,8 @@ $simpra-theme: mat.define-light-theme(
   --dark-text-color: #a5b2ba;
   --light-contrast-color: #000;
   --light-text-color-darker: #808080;
-  --primary-color: #f58846;
+  --primary-color: #4187fc;
+  --primary-color-dark: #3d50fa;
   --font-medium: 0.825rem;
   --font-normal: 1rem;
   --font-caption: 1.125rem;

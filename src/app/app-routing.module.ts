@@ -1,3 +1,4 @@
+import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { PinPageComponent } from './pin-page/pin-page.component';
@@ -9,6 +10,7 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   { path: '', component: PinPageComponent },
   { path: 'orders', component: FastFoodOrdersPageComponent },
+  { path: 'payment', component: PaymentPageComponent },
   { path: 'login', component: LoginPageComponent },
   { path: 'register', component: RegisterPageComponent },
 ];
