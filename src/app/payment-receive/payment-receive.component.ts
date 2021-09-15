@@ -18,7 +18,8 @@ export class PaymentReceiveComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(PaymentReceiveKeyboardComponent, {
-      width: '350px',
+      width: '550px',
+      backdropClass: 'modal-blur-backdrop',
       data: {},
     });
 
