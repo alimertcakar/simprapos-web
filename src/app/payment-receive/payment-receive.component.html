@@ -19,11 +19,15 @@
   <ng-template #hasOrders>
     <div class="payment-receiver__container">
       <div class="payment-receive-left">
-        <div class="payment-receiver__title">Ödenecekler</div>
+        <div class="dark-title">Ödenecekler</div>
         <div class="payment-items-container">
-          <div class="payment-item">dsadsa</div>
-          <div class="payment-item">sadsad</div>
-          <div class="payment-item">asdsada</div>
+          <div class="payment-item order" *ngFor="let order of orders">
+            <button class="count-minus-button">-</button>
+            <div class="count">{{1}}</div>
+            <button class="count-increase-button">+</button>
+            <div class="label">{{"Köri Soslu Patates Tabağı"}}</div>
+            <div class="price">12.00 TRY</div>
+          </div>
         </div>
 
         <div class="payment-items-total">
@@ -37,7 +41,27 @@
         </div>
       </div>
       <div class="payment-receive-right">
-        <div class="payment-receiver__title--small">Ödenecekler</div>
+        <div class="dark-title-small">Ödemeler</div>
+        <div class="paid-items">
+          <div class="paid-item">
+            <div class="paid-item__date-and-name">15:58
+              <div>Kredi Kartı</div>
+            </div>
+            <div>15.48 TRY</div>
+          </div>
+          <div class="paid-item">
+            <div class="paid-item__date-and-name">15:58
+              <div>Kredi Kartı </div>
+            </div>
+            <div>15.48 TRY</div>
+          </div>
+          <div class="paid-item">
+            <div class="paid-item__date-and-name">15:58
+              <div>Kredi Kartı </div>
+            </div>
+            <div>15.48 TRY</div>
+          </div>
+        </div>
       </div>
     </div>
   </ng-template>

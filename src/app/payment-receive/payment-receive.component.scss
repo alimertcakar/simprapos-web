@@ -49,7 +49,7 @@
     margin: 0 15px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
   }
   &__title {
@@ -69,16 +69,58 @@
   border-radius: 10px;
   padding: 5px 10px;
   margin-bottom: 1.5rem;
+  & .payment-item {
+    padding-left: 0 !important;
+    &:hover {
+      border-left: unset !important;
+      cursor: unset !important;
+      opacity: unset !important;
+      margin-left: 2px;
+    }
+  }
+}
+.paid-items {
+  background: #35373b;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-bottom: 1.5rem;
+  padding-bottom: 15px;
+}
+
+.paid-item {
+  display: flex;
+  justify-content: space-between;
+  color: #b8b9ba;
+  margin-top: 0.5rem;
+  &__date-and-name {
+    display: flex;
+    & div {
+      margin-left: 2ch;
+    }
+  }
 }
 
 .payment-receive-left {
 }
 
 .payment-receive-right {
+  padding: 5px 15px;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: "";
+    background: #474b52;
+    height: 100%;
+    width: 2px;
+  }
 }
 
 .payment-items-total {
   & button {
     min-width: 235px;
   }
+}
+
+.payment-item {
+  display: flex;
 }
