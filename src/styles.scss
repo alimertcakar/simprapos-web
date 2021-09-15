@@ -396,3 +396,34 @@ body {
 .modal-blur-backdrop {
   backdrop-filter: blur(5px);
 }
+
+.title-middle-lined {
+  position: relative;
+  &__line-padding {
+    position: relative;
+    &__inner {
+      z-index: 3;
+      position: relative;
+      left: 15px;
+    }
+    &::after {
+      top: 0;
+      background: #303236;
+      z-index: 1;
+      position: absolute;
+      height: 100%;
+      left: 8px;
+      width: 130px; /*şimdilik kalsın*/
+      content: "";
+    }
+  }
+
+  &::before {
+    content: "";
+    top: 50%;
+    position: absolute;
+    width: 100%;
+    background: #474b52;
+    height: 1px;
+  }
+}
