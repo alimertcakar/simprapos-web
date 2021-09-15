@@ -21,6 +21,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { PaymentPageComponent } from './payment-page/payment-page.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatRippleModule } from '@angular/material/core';
+import { PaymentSummaryComponent } from './payment-summary/payment-summary.component';
 import { PaymentReceiveComponent } from './payment-receive/payment-receive.component';
 
 @NgModule({
@@ -37,6 +38,7 @@ import { PaymentReceiveComponent } from './payment-receive/payment-receive.compo
     LoginPageComponent,
     RegisterPageComponent,
     PaymentPageComponent,
+    PaymentSummaryComponent,
     PaymentReceiveComponent,
   ],
   imports: [

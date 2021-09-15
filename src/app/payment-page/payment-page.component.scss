@@ -34,48 +34,6 @@
   grid-area: order-grid-right;
 }
 
-.order-menu {
-  position: relative;
-  // background: #f5f5f5;
-  background: var(--bg-primary);
-  border-radius: 10px;
-  box-shadow: -2px -2px 20px 5px rgb(0 0 0 / 5%);
-  overflow: hidden;
-  grid-area: order-grid-right;
-  scroll-snap-align: start;
-  @media all and (max-width: 900px) {
-    grid-area: order-grid-left;
-    order: 1;
-    border-radius: 0;
-  }
-}
-
-.receive-payment-tab-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0.25rem;
-  // color: rgba(255, 255, 255, 0.86);
-  color: #949597;
-  height: 100%;
-  & .tabs {
-    overflow: auto;
-    display: flex;
-    width: 100%;
-
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-
-  &__inner-empty {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-  }
-}
-
 .payment-summary__container {
   background: #303236;
   border-radius: 0 10px 0 0;
