@@ -1,6 +1,7 @@
 .panel-bottom-container {
   display: flex;
   flex-direction: row;
+  margin-top: 15px;
 }
 
 .pin-board {
@@ -57,6 +58,11 @@
       margin-top: 0.5rem;
       font-size: 15px !important;
 
+      &:hover {
+        background: #535353;
+        cursor: pointer;
+      }
+
       &:first-of-type {
         margin-top: 3px !important;
       }
@@ -66,6 +72,19 @@
 
 .calc-utilities {
   display: flex;
+  margin-top: 10px;
+  color: var(--text-dark);
+  margin-left: 5px;
+  & div {
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    padding: 0 4px;
+    margin-right: 4px;
+    &:hover {
+      background: #535353;
+      cursor: pointer;
+    }
+  }
 }
 .calc-utilities-container {
   display: flex;
@@ -84,7 +103,31 @@
   flex-direction: row;
   flex-wrap: nowrap;
   & input {
-    background: rgba(255, 255, 255, 0.05);
+    background: inherit;
+    font-size: var(--font-bigger);
+    caret-color: transparent;
+    color: #e2e2e3;
     max-height: 25px;
+    margin-left: 5px;
+    border: none;
+    padding: 5px;
+    width: 177px;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+    &:active {
+      border: none;
+    }
   }
+}
+
+.vertical-seperator {
+  background: #56585b;
+  width: 1px;
+  position: relative;
+  left: 20px;
+  top: -2px;
+  content: "";
 }
