@@ -51,6 +51,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
+    transition: all 0.15s;
   }
   &__title {
     font-weight: 500;
