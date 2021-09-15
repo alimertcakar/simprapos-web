@@ -1,10 +1,10 @@
 <div class="orders-top-container">
 
   <div class="payment-summary__container">
-    <app-payment-summary [orders]="orders" style="flex:1"></app-payment-summary>
+    <app-payment-summary style="flex:1" [addOrder]="addOrder"></app-payment-summary>
   </div>
 
-  <app-payment-receive style="display:flex; flex:1;" width></app-payment-receive>
+  <app-payment-receive [orders]="orders" style="display:flex; flex:1;" width></app-payment-receive>
 
 
 

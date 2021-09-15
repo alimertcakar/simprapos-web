@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./payment-summary.component.scss'],
 })
 export class PaymentSummaryComponent implements OnInit {
-  @Input() orders!: any;
+  @Input() addOrder!: any;
 
   constructor() {}
 

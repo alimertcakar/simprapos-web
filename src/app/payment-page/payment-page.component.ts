@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PaymentPageComponent implements OnInit {
   orders: any[] = [];
   addOrder(order: any) {
+    console.log(this.orders);
     this.orders.push(order);
   }
   constructor() {}

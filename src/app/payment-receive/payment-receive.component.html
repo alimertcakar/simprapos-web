@@ -1,5 +1,5 @@
 <div class="payment-menu" id="payment-menu">
-  <div class="receive-payment-tab-container">
+  <div *ngIf="!(orders?.length! > 0); else hasOrders" class="receive-payment-tab-container">
     <div class="receive-payment-tab-container__inner-empty">
       <svg data-v-ac1a210a="" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 40 88"
         class="icon balloon">
@@ -15,4 +15,10 @@
       <p style="margin-top:1.25rem">Ödeme almak için hesaptaki ürünlerden seçebilirsiniz.</p>
     </div>
   </div>
+
+  <ng-template #hasOrders>
+    <div>
+      Ürünleri ödeme al
+    </div>
+  </ng-template>
 </div>
