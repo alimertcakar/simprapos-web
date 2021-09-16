@@ -7,7 +7,7 @@ import { Router, NavigationStart } from '@angular/router';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'Simpra';
+  title = 'Veboni';
 
   showNav: boolean = false;
   navlessPages = ['/login', '/register'];

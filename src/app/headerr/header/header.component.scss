@@ -95,12 +95,60 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
+
   & .popover-container {
     padding: 5px;
   }
+  &__genders-container {
+    margin-bottom: 15px;
+  }
 
-  & > div {
+  &__line {
     flex: 1;
+    padding: 15px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:first-of-type {
+      padding-top: 0;
+    }
+    & .left {
+      display: flex;
+      align-items: center;
+      &__name {
+        margin-left: 1.5ch;
+      }
+    }
+    & .right {
+      display: flex;
+      align-items: center;
+    }
+    & .count {
+      margin: 0 10px;
+    }
+    & .count-minus-button {
+      display: block;
+      border-color: #e6e6e6;
+      color: var(--text-color);
+      margin-top: 0;
+      &:focus {
+        outline: none;
+      }
+    }
+    & .count-increase-button {
+      display: block;
+      border-color: #e6e6e6;
+      color: var(--text-color);
+      margin-top: 0;
+      margin-right: 0;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  &__seperator {
+    height: 0.4px;
+    background: #e6e6e6;
   }
   & button {
     margin-top: 10px;

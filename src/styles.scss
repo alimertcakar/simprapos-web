@@ -193,6 +193,7 @@ body {
     &--with-padding {
       @extend .popover-container__header;
       padding: 15px 15px 20px;
+      padding-top: 0;
     }
   }
 
@@ -299,6 +300,14 @@ body {
   }
 }
 
+.count-increase-button {
+  @extend .count-button;
+  margin-right: 10px;
+}
+.count-minus-button {
+  @extend .count-button;
+}
+
 .order {
   color: var(--dark-contrast-color);
   font-weight: 500;
@@ -314,13 +323,6 @@ body {
     border-left: 2px solid var(--primary-color-dark);
   }
 
-  & .count-increase-button {
-    @extend .count-button;
-    margin-right: 10px;
-  }
-  & .count-minus-button {
-    @extend .count-button;
-  }
   &.edit-mode {
     & .count-increase-button {
       display: grid !important;
