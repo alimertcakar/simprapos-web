@@ -52,6 +52,8 @@
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     transition: all 0.15s;
+    overflow: hidden;
+    max-height: calc(100vh - 65px);
   }
   &__title {
     font-weight: 500;
@@ -70,8 +72,14 @@
   border-radius: 10px;
   padding: 5px 10px;
   margin-bottom: 1.5rem;
+  overflow: auto;
   & .payment-item {
     padding-left: 0 !important;
+    & .count {
+      &:hover {
+        cursor: unset;
+      }
+    }
     &:hover {
       border-left: unset !important;
       cursor: unset !important;
@@ -102,6 +110,10 @@
 }
 
 .payment-receive-left {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  overflow: hidden;
 }
 
 .payment-receive-right {

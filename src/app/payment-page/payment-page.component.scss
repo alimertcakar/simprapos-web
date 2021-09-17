@@ -7,6 +7,7 @@
   grid-row-gap: 0px;
   grid-template-areas: "order-grid-left order-grid-right";
   height: calc(100vh - 65px);
+  overflow: hidden;
   background: var(--bg-primary);
 
   @media all and (max-width: 900px) {
