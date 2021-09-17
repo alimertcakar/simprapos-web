@@ -10,14 +10,16 @@
   overflow: hidden;
   background: var(--bg-primary);
 
-  @media all and (max-width: 900px) {
-    grid-template-columns: 100vw 100vw;
-    grid-template-rows: 1fr 55px;
+  @media all and (max-width: 1023px) {
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr 55px;
     overflow: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     touch-action: none;
     overflow-x: scroll;
+    max-height: 100vh;
+    overflow: auto;
 
     &::-webkit-scrollbar {
       display: none;
@@ -26,6 +28,9 @@
 
   & > div {
     padding: 10px;
+    @media all and (max-width: 1023px) {
+      padding: 0;
+    }
   }
 }
 .order-grid-left {
@@ -40,4 +45,12 @@
   border-radius: 0 10px 0 0;
   display: flex;
   flex-direction: column;
+}
+
+.payment-receive__container {
+  @media all and (max-width: 1023px) {
+    border-top: 1px solid var(--border-dark-400);
+
+    grid-area: 2;
+  }
 }

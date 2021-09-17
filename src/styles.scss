@@ -103,17 +103,20 @@ $simpra-theme: mat.define-light-theme(
 }
 
 :root {
+  /* BACKGROUND COLORS */
   --bg-primary: #292b2f;
-  --text-color: #444;
   --bg-very-light: #969d9f;
   --bg-darker: #121212;
-  --dark-contrast-color: #fff;
-  --dark-text-color: #a5b2ba;
-  --light-contrast-color: #000;
-  --light-text-color-darker: #808080;
+
+  /* PRIMARY SHADES*/
   --primary-color: #4187fc;
   --primary-color-dark: #3d50fa;
+  /* TEXT COLOR*/
+  --text-color: #444;
   --text-dark: rgba(255, 255, 255, 0.86);
+  --dark-text-color: #a5b2ba;
+  --light-text-color-darker: #808080;
+  /* FONT SIZES*/
   --font-medium: 0.825rem;
   --font-normal: 1rem;
   --font-caption: 1.125rem;
@@ -122,6 +125,11 @@ $simpra-theme: mat.define-light-theme(
   --font-bigger: 2rem;
   --font-huge: 2.5rem;
   --font-even-bigger: 3rem;
+  /* Black and whide reserved */
+  --dark-contrast-color: #fff;
+  --light-contrast-color: #000;
+  /*Border colors*/
+  --border-dark-400: #36393f;
 
   max-height: 100vh;
   max-width: 100vw;

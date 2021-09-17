@@ -12,6 +12,10 @@
   margin-bottom: 10px;
   border-radius: 10px 10px 0px 0px;
 
+  @media all and (max-width: 1023px) {
+    border: none;
+  }
+
   &__tab {
     flex-basis: 50%;
     max-width: 50%;
@@ -33,6 +37,10 @@
     }
 
     &--active {
+      @media all and (max-width: 1023px) {
+        border-radius: 8px;
+      }
+
       background: var(--primary-color-dark) !important;
       color: #fff;
       opacity: 1;
@@ -55,6 +63,9 @@
   width: 2px;
   background: #40444a;
   content: "";
+  @media all and (max-width: 1200px) {
+    display: none;
+  }
 }
 .footer {
   color: rgba(255, 255, 255, 0.86);
@@ -66,6 +77,11 @@
   padding: 5px;
   border-radius: 10px;
   min-height: 80px;
+
+  @media all and (max-width: 1023px) {
+    display: none;
+  }
+
   &__column {
     flex: 1;
     display: flex;
@@ -80,11 +96,18 @@
       text-transform: uppercase;
       font-weight: 600;
       color: #d0d2d8;
+      white-space: nowrap;
+      @media all and (max-width: 1200px) {
+        font-size: 11px;
+      }
     }
     & .amount {
       font-size: var(--font-caption);
       margin-top: 0.5rem;
       font-weight: 500;
+      @media all and (max-width: 1200px) {
+        font-size: 14px;
+      }
     }
   }
 }
